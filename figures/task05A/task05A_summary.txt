@@ -1,0 +1,21 @@
+Task 5A coherent interference scan
+========================================
+a = 0.816497, b_x = 0.408248, b_z = 0.408248
+t_eval = 4.188790e+00 a.u.
+grid = 41^3, XMAX = 28.0
+angles = 81 x 91
+
+delta = 0.000000 rad
+  p_density = (4.440892e-16, 5.040843e-16, 4.718448e-16)
+  p_expected = (3.017927e-17, 3.820568e-33, 3.017927e-17)
+  max exact-vs-dipole map deviation = 6.143021e-01
+
+delta = 1.570796 rad
+  p_density = (4.440892e-16, 5.763584e-16, 4.928649e-01)
+  p_expected = (2.580767e-17, 4.089613e-19, 4.928649e-01)
+  max exact-vs-dipole map deviation = 1.000000e+00
+
+delta = 3.141593 rad
+  p_density = (3.330669e-16, 5.302185e-16, 4.163336e-16)
+  p_expected = (3.017927e-17, 3.820568e-33, 3.017927e-17)
+  max exact-vs-dipole map deviation = 9.968357e-01
