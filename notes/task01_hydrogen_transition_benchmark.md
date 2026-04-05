@@ -53,7 +53,7 @@ I(\theta,\phi)\propto
 \left|\hat{\mathbf n}\times(\hat{\mathbf n}\times\mathbf d_{ab})\right|^2.
 $$
 
-For \(1s \leftrightarrow 2p_z\), the dipole should point along \(z\), so the pattern must be
+For $1s \leftrightarrow 2p_z$, the dipole should point along $z$, so the pattern must be
 
 $$
 I(\theta)\propto \sin^2\theta.
@@ -63,17 +63,17 @@ $$
 
 ## Deliverables
 
-1. Compute \((d_x,d_y,d_z)\) for \(1s \leftrightarrow 2p_z\)
-2. Compute \((d_x,d_y,d_z)\) for \(1s \leftrightarrow 2s\)
-3. Plot numerical \(I(\theta)\) against analytic \(\sin^2\theta\)
-4. Plot a full \((\theta,\phi)\) far-field map
+1. Compute $(d_x,d_y,d_z)$ for $1s \leftrightarrow 2p_z$
+2. Compute $(d_x,d_y,d_z)$ for $1s \leftrightarrow 2s$
+3. Plot numerical $I(\theta)$ against analytic $\sin^2\theta$
+4. Plot a full $(\theta,\phi)$ far-field map
 
 ---
 
 ## Pass-fail gates
 
 ### Gate A
-For \(1s \leftrightarrow 2p_z\),
+For $1s \leftrightarrow 2p_z$,
 
 $$
 \frac{|d_x|}{|d_z|}<10^{-2},\qquad
@@ -81,7 +81,7 @@ $$
 $$
 
 ### Gate B
-For \(1s \leftrightarrow 2s\),
+For $1s \leftrightarrow 2s$,
 
 $$
 \frac{|\mathbf d_{1s,2s}|}{|\mathbf d_{1s,2p_z}|}<10^{-3}

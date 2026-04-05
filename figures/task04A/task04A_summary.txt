@@ -1,0 +1,38 @@
+Task 4A — general hydrogen state engine
+============================================
+
+Normalization results:
+      1s : 1.000000042661e+00
+      2s : 1.000000005352e+00
+     2pz : 1.000000000444e+00
+     2px : 9.999999998095e-01
+     2py : 9.999999998095e-01
+    2p+1 : 9.999999998095e-01
+Max normalization error: 4.266072539671e-08
+
+Orthogonality results:
+         <1s|2s> : 1.507686560509e-08
+        <1s|2pz> : 0.000000000000e+00
+        <2s|2pz> : 0.000000000000e+00
+       <2px|2py> : 1.170242281778e-17
+      <2pz|2p+1> : 2.126552315786e-18
+Max overlap magnitude: 1.507686560509e-08
+
+Dipole selection-rule checks:
+  1s->2s  : |dx|,|dy|,|dz| = [2.1582735598713195e-16, 2.1133095273740005e-16, 2.1133095273740005e-16]
+  1s->2pz : |dx|,|dy|,|dz| = [9.82166059256534e-19, 7.757388873815357e-19, 0.7448858303774527]
+  1s->2px : |dx|,|dy|,|dz| = [0.7448858303774527, 7.615114878674396e-17, 2.630279795775907e-18]
+
+Forbidden-transition max dipole magnitude (1s->2s): 2.158273559871e-16
+Allowed 1s->2pz main component |dz|: 7.448858303775e-01
+Allowed 1s->2pz leakage max(|dx|,|dy|): 9.821660592565e-19
+Allowed 1s->2px main component |dx|: 7.448858303775e-01
+Allowed 1s->2px leakage max(|dy|,|dz|): 7.615114878674e-17
+
+Interpretation:
+- Scalar validation is now done in spherical coordinates, not on a Cartesian cube.
+- Norms should be very close to 1.
+- Overlaps between distinct states should be very small.
+- 1s->2s should be dipole-forbidden.
+- 1s->2pz should be z-polarized.
+- 1s->2px should be x-polarized.

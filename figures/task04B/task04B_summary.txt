@@ -1,0 +1,29 @@
+Task 4B — hydrogen transition-family scan (fixed benchmark)
+================================================================
+
+Transitions scanned:
+  1s -> 2pz
+  1s -> 3pz
+  1s -> 4pz
+  2s -> 3pz
+  2s -> 4pz
+  3s -> 4pz
+
+transition      omega[a.u.]    rel_dip_err     max_prof_dev     phi_spread    aux_J_err
+---------------------------------------------------------------------------------------
+1s->2pz        3.750000e-01   2.577129e-03     1.970806e-08   2.242651e-14 5.780419e-02
+1s->3pz        4.444444e-01   3.844795e-03     3.324094e-08   5.573320e-14 7.244816e-02
+1s->4pz        4.687500e-01   4.363030e-03     3.911439e-08   7.360779e-14 7.783211e-02
+2s->3pz        6.944444e-02   2.458497e-04     3.988582e-10   4.440892e-16 2.780424e-02
+2s->4pz        9.375000e-02   3.928386e-04     8.496130e-10   8.881784e-16 3.288174e-02
+3s->4pz        2.430556e-02   4.494017e-04     1.232828e-10   6.661338e-16 1.617456e-02
+
+Worst profile deviation: 1s->4pz with 3.911439e-08
+Worst Cartesian-vs-spherical dipole error: 1s->4pz with 4.363030e-03
+
+Interpretation:
+- The fixed benchmark is the Cartesian dipole compared against high-accuracy spherical quadrature.
+- This is stronger than the old coarse-grid current-moment diagnostic.
+- The old current-moment quantity is retained only as an auxiliary numerical indicator.
+- Radiation-pattern validity is judged primarily by max profile deviation and phi-spread.
+- Source-amplitude validity is judged primarily by Cartesian-vs-spherical dipole agreement.
