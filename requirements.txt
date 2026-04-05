@@ -8,3 +8,5 @@ jaxlib
 pytest
 jupyter
 ipykernel
+pandas
+tqdm

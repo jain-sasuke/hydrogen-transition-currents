@@ -1,0 +1,23 @@
+Task 1 hydrogen benchmark summary
+========================================
+
+Allowed transition: 1s <-> 2p_z
+dx = -6.527066403937e-20+0.000000000000e+00j
+dy = -8.736371127999e-20+0.000000000000e+00j
+dz = -7.448788257845e-01+0.000000000000e+00j
+
+Forbidden transition: 1s <-> 2s
+dx = -1.791298284863e-17+0.000000000000e+00j
+dy = 1.830532158438e-18+0.000000000000e+00j
+dz = 1.030259114500e-18+0.000000000000e+00j
+
+|<1s|z|2p_z>| exact    = 7.449355390278e-01
+|<1s|z|2p_z>| numerical = 7.448788257845e-01
+relative error          = 7.613174607019e-05
+|d_1s,2s| / |d_1s,2p_z|  = 2.421295987599e-17
+max angular-profile error vs sin^2(theta) = 3.191891195797e-16
+
+Pass/fail gates
+Gate A (dx,d y << dz for 1s<->2p_z): PASS
+Gate B (forbidden ratio < 1e-10): PASS
+Gate C (profile error < 1e-10): PASS

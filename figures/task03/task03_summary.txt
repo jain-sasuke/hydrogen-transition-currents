@@ -1,0 +1,18 @@
+Task 3 far-field from actual transition current
+====================================================
+
+omega_21 [a.u.] = 3.750000000000e-01
+k = omega/c [a.u.] = 2.736507213481e-03
+
+Integrated-current benchmark:
+Integral J_z d^3r                 = 2.795000934297e-01
+Expected omega * |<1s|z|2p_z>|    = 2.793508271354e-01
+Relative error                    = 5.343327450740e-04
+
+Angular-pattern checks:
+Max |I_exact_norm - I_dip_norm|   = 1.325883847159e-11
+Equatorial phi spread fraction    = 3.330669073875e-16
+
+Interpretation:
+- If the profile matches sin^2(theta), hydrogen is in the dipole regime.
+- If phi variation is negligible, the z-polarized source is axisymmetric.

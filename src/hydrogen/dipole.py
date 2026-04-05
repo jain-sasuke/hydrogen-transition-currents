@@ -25,8 +25,11 @@ def spherical_grids(
 def _trapz3(integrand: np.ndarray, r: np.ndarray, theta: np.ndarray, phi: np.ndarray) -> complex:
     """
     Integrate array of shape (nr, ntheta, nphi) over (r, theta, phi).
+
+    Use a periodic rectangle-rule sum in phi, and trapezoid in theta and r.
     """
-    out_phi = np.trapezoid(integrand, phi, axis=2)
+    dphi = (phi[1] - phi[0]) if len(phi) > 1 else 2.0 * np.pi
+    out_phi = np.sum(integrand, axis=2) * dphi
     out_theta = np.trapezoid(out_phi, theta, axis=1)
     out_r = np.trapezoid(out_theta, r, axis=0)
     return complex(out_r)

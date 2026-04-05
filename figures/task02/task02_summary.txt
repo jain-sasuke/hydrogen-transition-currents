@@ -1,0 +1,16 @@
+Task 2 transition-current benchmark summary
+================================================
+
+Hydrogen energies (a.u.): E1 = -5.000000000000e-01, E2 = -1.250000000000e-01
+Transition frequency omega_21 = 3.750000000000e-01 a.u.
+T/4 = 4.188790204786e+00 a.u.
+
+|p_z(t=0)| from charge density = 7.449342711475e-01
+|<1s|z|2p_z>| benchmark      = 7.449355390278e-01
+Relative dipole-amplitude error = 1.702000028317e-06
+
+Masked continuity residual metric (p99) = 2.639388408078e-02
+
+Expected phase relation:
+rho_osc ~ cos(omega t)
+J_osc   ~ sin(omega t)
